@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <title>تعلم JavaScript</title>
+    </head>
+    <body>
+        <script>
+            var topStudents = [
+                "أحمد محمد",
+                "سامر إبراهيم",
+                "جمال خليل"
+            ];
+
+            function createListItem(studentName) {
+                var item = document.createElement("li");
+                item.textContent = studentName;
+                list.appendChild(item);
+            }
+
+            var list = document.createElement("ol");
+
+            topStudents.forEach(createListItem);
+
+            document.body.appendChild(list);
+        </script>
+    </body>
+</html>

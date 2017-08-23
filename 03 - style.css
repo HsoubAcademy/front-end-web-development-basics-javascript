@@ -1,0 +1,29 @@
+h1 {
+    color: #FF6F00;
+    font-size: 300%;
+    font-weight: normal;
+}
+
+#first_paragraph {
+    color: green;
+    background: rgb(211, 211, 211);
+    width: 50%;
+    height: 50%;
+}
+
+#second_paragraph {
+    color: blue;
+}
+
+div {
+    font-size: 200%;
+    height: 300px;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+    background-color: lightblue;
+    width: 200px;
+    display: inline-block;
+}

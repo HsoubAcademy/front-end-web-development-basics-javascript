@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <title>القوائم</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #shopping_list {
+                list-style: circle;
+            }
+            #shopping_list > li:not(.completed) {
+                color: blue;
+            }
+            .completed {
+                color: gray;
+                text-decoration: line-through;
+                list-style: disc;
+            }
+            h1 {
+                text-align: center;
+            }
+            #goal_list > li{
+                list-style: upper-roman;
+            }
+            #goal_list > li:first-of-type {
+                list-style: url("number-1.png");
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>قائمة المشتريات</h1>
+        <ul id="shopping_list">
+            <li>بطاطا</li>
+            <li>جزر</li>
+            <li id="orange">برتقال</li>
+        </ul>
+        <form>
+            <label for="new_item">أضف عنصرا جديدا:</label>
+            <input id="new_item" placeholder="العنصر الجديد">
+            <button type="submit">أضف العنصر</button>
+        </form>
+        <h1>أهدافي لهذا الشهر</h1>
+        <ol id="goal_list">
+            <li>إنهاء دراسة كتاب الرياضيات</li>
+            <li>تعلم JavaScript</li>
+        </ol>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
